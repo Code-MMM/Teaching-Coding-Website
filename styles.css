@@ -1,3 +1,57 @@
 body {
-    background-color: burlywood;
+    background-color: #c9fffb;
 }
+
+.Header {
+    text-align: center;
+    padding: 1%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 5px;
+    background-color: #00ff0da1;
+    backdrop-filter: blur(5px);
+}
+
+.NavElement {
+    margin: 5% 0;
+}
+
+.Codeureka {
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.Details {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.Slogan {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Container {
+    display: flex
+}
+
+.Navigation {
+    background-color: rgb(21, 226, 123);
+    width: 3%;
+    padding-top: 1%;
+    margin: 1%;
+    font-size: 14pt;
+    padding-right: 6%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    height: 500px;
+}
+
+.Footer {
+    background-color: #87DADE;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+.item {
+
+    
+}
+    
