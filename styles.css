@@ -2,6 +2,14 @@ body {
     background-color: #c9fffb;
 }
 
+.PuzzleRush {
+    text-align: center;
+}
+
+.Debug {
+    text-align: center;
+}
+
 .Header {
     text-align: center;
     padding: 1%;
@@ -9,6 +17,11 @@ body {
     border-radius: 5px;
     background-color: #00ff0da1;
     backdrop-filter: blur(5px);
+    margin-bottom: 2%;
+}
+
+.GuessLang {
+    text-align: center;
 }
 
 .NavElement {
