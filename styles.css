@@ -15,9 +15,13 @@ body {
     padding: 1%;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 5px;
-    background-color: #00ff0da1;
+    background-color: #ffffff00;
     backdrop-filter: blur(5px);
     margin-bottom: 2%;
+}
+
+.Headerback {
+    background-image: url(https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/what-is-coding.png);
 }
 
 .GuessLang {
@@ -26,11 +30,13 @@ body {
 
 .NavElement {
     margin: 5% 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16pt;
 }
 
 .Codeureka {
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    color: #fff;
 }
 
 .Details {
@@ -40,6 +46,7 @@ body {
 
 .Slogan {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
 }
 
 .Container {
@@ -47,7 +54,7 @@ body {
 }
 
 .Navigation {
-    background-color: rgb(21, 226, 123);
+    background-color: rgb(17, 202, 109);
     width: 3%;
     padding-top: 1%;
     margin: 1%;
