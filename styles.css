@@ -1,5 +1,5 @@
 body {
-    background-color: #c9fffb;
+    background-color: #F5BC95;
 }
 
 .PuzzleRush {
@@ -15,7 +15,6 @@ body {
     padding: 1%;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 5px;
-    background-color: #ffffff00;
     backdrop-filter: blur(5px);
     margin-bottom: 2%;
 }
@@ -74,7 +73,7 @@ body {
 }
 
 .Navigation {
-    background-color: rgb(17, 202, 109);
+    background-color: #90A2B1;
     width: 1%;
     padding-top: 1%;
     margin: 1%;
@@ -90,7 +89,7 @@ body {
 }
 
 .Footer {
-    background-color: #87DADE;
+    background-color: #76A88A;
     font-family: Georgia, 'Times New Roman', Times, serif;
    
 }
