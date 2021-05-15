@@ -1,20 +1,17 @@
 
 var chosenimg = getRndInteger(1, 3)
 
-var opt1 = document.createElement("button")
-opt1.innerHTML = getOptions(chosenimg)[0]
-opt1.className = "CenterButton"
-document.body.appendChild(opt1)
+var opt1 = document.getElementById("opt1")
+opt1.innerText = getOptions(chosenimg)[0]
+opt1.onclick = function () {ValidateAnswer(getOptions(chosenimg)[0])}
 
-var opt2 = document.createElement("button")
-opt2.innerHTML = getOptions(chosenimg)[1]
-opt2.className = "CenterButton"
-document.body.appendChild(opt2)
+var opt2 = document.getElementById("opt2")
+opt2.innerText = getOptions(chosenimg)[1]
+opt2.onclick = function () {ValidateAnswer(getOptions(chosenimg)[1])}
 
-var opt3 = document.createElement("button")
-opt3.innerHTML = getOptions(chosenimg)[2]
-opt3.className = "CenterButton"
-document.body.appendChild(opt3)
+var opt3 = document.getElementById("opt3")
+opt3.innerText = getOptions(chosenimg)[2]
+opt3.onclick = function () {ValidateAnswer(getOptions(chosenimg)[2])}
 
 var codesample = new Image()
 codesample.src = "DebugCode/code" + chosenimg + ".png"
@@ -33,6 +30,29 @@ function getOptions(imgno) {
             return ["Code uses : instead of brackets", "Code does not put () around the conditions of the if statement", "Identation is not propper", "Add indentation in lines 4, 6 and 8.", "Convert the inputs to integers", "Nothing, it is fine as is."]
             break;
         case 2:
-            return []
+            return ["There is no return statement in the CircleR function", "There is a bracket mismatch", "A semicolon is missing."]
+            break;
+        case 3:
+            return ["The numbers are not in the float type.", "Missing semi colons", "The True and False have to be lowercase"]
+            break;
+
+    }
+}
+
+function ValidateAnswer(answer) {
+    switch(chosenimg) {
+        case 1:
+            if (answer == "Identation is not propper") {alert("You got it correct!"); location.reload()}
+            else {alert("You got it wrong, try again!");}
+            break;
+        case 2:
+            if (answer == "There is no return statement in the CircleR function") {alert("You got it correct!"); location.reload()}
+            else {alert("You got it wrong, try again!");}
+            break;
+        case 3:
+            if (answer == "The True and False have to be lowercase") {alert("You got it correct!"); location.reload()}
+            else {alert("You got it wrong, try again!");}
+            break;
+
     }
 }
