@@ -16,6 +16,7 @@ opt3.onclick = function () {ValidateAnswer(getOptions(chosenimg)[2])}
 var codesample = new Image()
 codesample.src = "DebugCode/code" + chosenimg + ".png"
 codesample.style = "margin-right: auto; margin-left: auto; display:block; margin-top:5%"
+codesample.id = "gameimg"
 document.body.appendChild(codesample)
 
 

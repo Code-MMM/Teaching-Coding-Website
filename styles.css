@@ -93,3 +93,35 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
    
 }
+
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    .Navigation {
+        width: 100%
+    }
+
+    .Container {
+        display: block;
+    }
+
+    .NavLogo {
+        display: none;
+    }
+
+    .NavElement {
+        margin-left: 12%;
+    }
+
+    #gameimg {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+
+    .CenterButton {
+        margin-top: 30px;
+    }
+
+    .HomeButton {
+        margin-top: 15px;
+    }
+}

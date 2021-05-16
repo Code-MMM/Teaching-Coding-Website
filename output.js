@@ -4,6 +4,7 @@ var chosenimg = options[getRndInteger(1, 3) - 1]
 var codesample = new Image()
 codesample.src = "OutputCode/code" + chosenimg + ".png"
 codesample.style = "margin-right: auto; margin-left: auto; display:block; margin-top:5%"
+codesample.id = "gameimg"
 document.body.appendChild(codesample)
 
 function getRndInteger(min, max) {
