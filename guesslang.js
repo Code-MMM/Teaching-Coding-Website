@@ -1,5 +1,5 @@
-var options = [1, 2, 3, 4, 5]
-var chosenimg = options[getRndInteger(1, 5) - 1]
+var options = [1, 2, 3, 4, 5, 6]
+var chosenimg = options[getRndInteger(1, 6) - 1]
 
 var codesample = new Image()
 codesample.src = "GuessLangCode/code" + chosenimg + ".png"
@@ -61,6 +61,16 @@ function verifyAnswer(answer) {
                 alert("You got it wrong, try again!");
             }
             break;
+        case 6:
+            if (answer.toLowerCase() == 'python') {
+                alert("You got it correct!");
+                reload()
+            }
+
+            else {
+                alert("You got it wrong, try again!");
+            }
+            break;
             
         
     }
@@ -68,7 +78,7 @@ function verifyAnswer(answer) {
 
 function reload() {
     var newoptions = [];
-    var options = [1, 2, 3, 4, 5]
+    var options = [1, 2, 3, 4, 5, 6]
     switch(chosenimg) {
         case 1:
             options.shift()
@@ -87,6 +97,10 @@ function reload() {
             newoptions = options
             break;
         case 5:
+            options.splice(4, 1)
+            newoptions = options
+            break;
+        case 6:
             options.pop()
             newoptions = options
             break;
@@ -96,7 +110,7 @@ function reload() {
 
     console.log(chosenimg)
 
-    chosenimg = newoptions[getRndInteger(1, 4) - 1]
+    chosenimg = newoptions[getRndInteger(1, 5) - 1]
 
     codesample.src = "GuessLangCode/code" + chosenimg + ".png"
 }
