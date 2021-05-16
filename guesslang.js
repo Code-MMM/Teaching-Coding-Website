@@ -1,5 +1,5 @@
-
-var chosenimg = getRndInteger(1, 5)
+var options = [1, 2, 3, 4, 5]
+var chosenimg = options[getRndInteger(1, 5) - 1]
 
 var codesample = new Image()
 codesample.src = "GuessLangCode/code" + chosenimg + ".png"
@@ -14,7 +14,7 @@ function verifyAnswer(answer) {
         case 1:
             if (answer.toLowerCase() == 'python') {
                 alert("You got it correct!");
-                location.reload()
+                reload()
             }
 
             else {
@@ -24,7 +24,7 @@ function verifyAnswer(answer) {
         case 2:
             if (answer.toLowerCase() == 'c sharp' || answer.toLowerCase() == 'c#') {
                 alert("You got it correct!");
-                location.reload()
+                reload()
             }
 
             else {
@@ -34,7 +34,7 @@ function verifyAnswer(answer) {
         case 3:
             if (answer.toLowerCase() == 'javascript' || answer.toLowerCase() == 'js') {
                 alert("You got it correct!");
-                location.reload()
+                reload()
             }
 
             else {
@@ -44,7 +44,7 @@ function verifyAnswer(answer) {
         case 4:
             if (answer.toLowerCase() == 'c++' || answer.toLowerCase() == 'c plus plus') {
                 alert("You got it correct!");
-                location.reload()
+                reload()
             }
 
             else {
@@ -54,7 +54,7 @@ function verifyAnswer(answer) {
         case 5:
             if (answer.toLowerCase() == 'java') {
                 alert("You got it correct!");
-                location.reload()
+                reload()
             }
 
             else {
@@ -64,4 +64,39 @@ function verifyAnswer(answer) {
             
         
     }
+}
+
+function reload() {
+    var newoptions = [];
+    var options = [1, 2, 3, 4, 5]
+    switch(chosenimg) {
+        case 1:
+            options.shift()
+            newoptions = options
+            break;
+        case 2:
+            options.splice(1, 1)
+            newoptions = options
+            break;
+        case 3:
+            options.splice(2, 1)
+            newoptions = options
+            break;
+        case 4:
+            options.splice(3, 1)
+            newoptions = options
+            break;
+        case 5:
+            options.pop()
+            newoptions = options
+            break;
+    }
+
+    console.log(newoptions)
+
+    console.log(chosenimg)
+
+    chosenimg = newoptions[getRndInteger(1, 4) - 1]
+
+    codesample.src = "GuessLangCode/code" + chosenimg + ".png"
 }
