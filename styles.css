@@ -38,6 +38,8 @@ body {
 
 .NavElement {
     margin: 5% 0;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16pt;
 }
@@ -45,6 +47,35 @@ body {
 .Codeureka {
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     color: #fff;
+}
+
+.Codeureka {
+    width: 20%;
+    top: 50%;
+    position: absolute;
+    left: 40%;
+    border-bottom: 5px solid white;
+    overflow: hidden;
+    animation: animate 2s linear forwards;
+}
+
+.Codeureka h1 {
+    color: white;
+}
+
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+    30% {
+        width: 50px;
+        height: 0px;
+    }
+    60% {
+        width: 50px;
+        height: 80px;
+    }
 }
 
 .Details {
@@ -76,12 +107,8 @@ body {
     background-color: #33dfc2;
     width: 1%;
     padding-top: 1%;
-    margin: 1%;
+    padding-bottom: 1%;
     font-size: 14pt;
-    padding-right: 5%;
-    padding-left: 1%;
-    display: inline-flex;
-    flex-wrap: wrap;
 }
 
 .flex-gap > div {
@@ -92,6 +119,21 @@ body {
     background-color: #52a6d6;
     font-family: Georgia, 'Times New Roman', Times, serif;
    
+}
+
+.Navigation {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.NavLogo {
+    height: 40px;
+    width: 40px;
+}
+
+.Container {
+    display: block;
 }
 
 @media only screen and (max-width: 1000px) {

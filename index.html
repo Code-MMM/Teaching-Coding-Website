@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Codeureka - Learn Coding, The Fun Way!</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <link rel="icon" href="https://cdn.discordapp.com/attachments/818677498043695146/842255001757679626/Codeureka.png">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-        <div class = "Headerback">
-            <div class = "Header">
-                <h1 class = "Codeureka">Codeureka</h1>
-                <h2 class = "Slogan">Explore Coding, The Language of The Future.</h2>
+    
+        <div class = "Headerback" style="text-align: center; background-image: url(https://www.goodcore.co.uk/blog/wp-content/uploads/2019/08/what-is-coding.png);">
+            <div style="box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+            border-radius: 5px;
+            background-color: rgba(155, 9, 240, 0.15);
+            backdrop-filter: blur(5px);">
+
+                <br>
+                <br>
+                <h1 class = "Codeureka" style = "color: white;">Codeureka</h1>
+                <br>
+                <br>
+                <br>
+                <h2 class = "Slogan" style="color: white; padding-bottom: 4%;">Explore Coding, The Language of The Future</h2>
             </div>
         </div>
         
 
-        <div class="Container"> 
-    
-    
-        <div class = "Navigation">
-                <a href = "index.html" class = "NavElement">Home </a>
-                <a href="index.html"><img src = "NavLogo/home.png" style = "width: 300%;" class = "NavLogo"></a> 
-                <a href = "games.html" class = "NavElement">Games</a>
-                <a href="games.html"><img src = "NavLogo/game.png" style="width: 300%;" class = "NavLogo"></a> 
-                <a href = "puzzles.html" class = "NavElement">Puzzles</a>
-                <a href="puzzles.html"><img src = "NavLogo/puzzle.png" style = "width: 300%;" class = "NavLogo"></a>  
-        </div>
-    
+        <div class="Container">
     
         <div class = "Details">
             <p>This is a website, made by coders, for coders, who wish to help all aspiring coders to sharpen their skills through a set of interactive games and puzzles. Come, and take your first step towards being a professional coder!</p>
@@ -39,12 +40,40 @@
                
             
             <div style="display:flex; flex-wrap: wrap; gap: 6%;"">
-                <a href = "#"><img class = "DetailImage" src = "https://media.discordapp.net/attachments/818677498043695146/842255001757679626/Codeureka.png"/></a>
-                <a href="#"><img class = "DetailImage" src = "https://robots.net/wp-content/uploads/2019/12/Best-Coding-Languages-300x300.png"></a>
-                <a href="#"><img class = "DetailImage" src = "https://spzone-simpleprogrammer.netdna-ssl.com/wp-content/uploads/2018/08/clean-code-tips-300x300.png"></a>
-                <a href="#"><img class = "DetailImage" id = "4thimg" src="https://console.kr-asia.com/wp-content/uploads/2019/07/Coding-300x300.jpg"></a>
-                <h3> (Our games and puzzles are most optimally played on a tablet or PC/Laptop, although can be played on a Mobile Device. Enjoy!)</h3>
             </div>
+
+
+            <div class="card-deck" style="margin-bottom: 2%; width: 100%; margin-left: 0.01%;">
+                <div class="card" style="background-color: rgb(159, 221, 236);">
+                    <img class="card-img-top" src="https://cdn.discordapp.com/attachments/841520304932519946/843849978300203038/guess-the-programming-language.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Guess The Language.</h4>
+                      <p class="card-text">
+                        A game where you are given an image of a code and you are supposed to identify which language the code belongs to, a fun game which challenges your knowledge of different coding languages!
+                      </p>
+                      <a href="guesslang.html" class="btn btn-primary">Click here to attempt!</a>
+                    </div>
+                  </div>
+                  <div class="card" style="background-color: rgb(159, 221, 236);">
+                    <img class="card-img-top" src="https://cdn.discordapp.com/attachments/841520304932519946/843852132742332436/unknown.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">What output will this code bring?</h4>
+                      <p class="card-text">
+                        You will be given a simple program, in which there is an error, and you are to fix the error, and submit the code again for checking. Great practice for beginning coders!
+                      </p>
+                      <a href="output.html" class="btn btn-primary">Click here to attempt!</a>
+                    </div>
+                  </div>
+                  <div class="card" style="background-color: rgb(159, 221, 236);"">
+                    <img class="card-img-top" src="https://cdn.discordapp.com/attachments/841520304932519946/843850410683138078/EtHMqTqXMAI42u_.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Find the error in the code!</h4>
+                      <p class="card-text">
+                        You will be given a simple program, in which there is an error, and you are to fix the error, and submit the code again for checking. Great practice for beginning coders!
+                      </p>
+                      <a href="debug.html" class="btn btn-primary">Click here to attempt!</a>
+                    </div>
+                  </div>
         </div>
 
     </div>
