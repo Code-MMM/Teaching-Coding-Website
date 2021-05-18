@@ -70,7 +70,7 @@ function reload() {
 
     console.log(chosenimg)
 
-    chosenimg = newoptions[getRndInteger(1, 3) - 1]
+    chosenimg = newoptions[getRndInteger(1, 2) - 1]
 
     codesample.src = "OutputCode/code" + chosenimg + ".png"
 }
