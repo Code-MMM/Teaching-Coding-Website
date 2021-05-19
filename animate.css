@@ -4,8 +4,6 @@
 
 .Codeureka {
     width: 20%;
-    position: absolute;
-    left: 40%;
     border-bottom: 5px solid white;
     overflow: hidden;
     animation: animate 2s linear forwards;
@@ -25,5 +23,15 @@
     60% {
         width: 50px;
         height: 80px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    /* For mobile phones: */
+    .Codeureka {
+        width: 100%;
+        animation: none;
+        overflow: visible;
+        border-bottom: 0pc;
     }
 }
